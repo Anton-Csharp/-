@@ -21,12 +21,13 @@ namespace магазин_тех
         private void button2_Click(object sender, EventArgs e)
         {
            Button button = sender as Button;
-            listBox1.Text  += button ;
+            listBox1.Items.Add(button.Text);
            
         }
         bool list = true;
         private void button7_Click(object sender, EventArgs e)
         {
+
             if (list == true)
             {
                 listBox1.Visible = true;
@@ -38,6 +39,14 @@ namespace магазин_тех
                 list = true;
             }
 
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (listBox1.SelectedItems != -1)
+            {
+
+            }
         }
     }
 }

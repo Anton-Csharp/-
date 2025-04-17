@@ -50,6 +50,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.listBox1 = new System.Windows.Forms.ListBox();
+            this.button6 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -266,11 +267,22 @@
             this.listBox1.TabIndex = 27;
             this.listBox1.Visible = false;
             // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(804, 560);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(99, 59);
+            this.button6.TabIndex = 28;
+            this.button6.Text = "удалить товар";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
             // Form3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1214, 668);
+            this.Controls.Add(this.button6);
             this.Controls.Add(this.listBox1);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -329,5 +341,6 @@
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.ListBox listBox1;
+        private System.Windows.Forms.Button button6;
     }
 }
