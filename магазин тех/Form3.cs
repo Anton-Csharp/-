@@ -11,42 +11,19 @@ using System.Windows.Forms;
 namespace магазин_тех
 {
     public partial class Form3 : Form
-    { 
+    {
+        UserControl1[] UserControl1;
         
         public Form3()
         {
             InitializeComponent();
+            UserControl1= new UserControl1[4];
+            UserControl1[0] = new UserControl1(this) { Nameitem = "Poco X7 Pro", Priceitem = "1100", Imageitem = Properties.Resources.i };
+            UserControl1[1] = new UserControl1(this) { Nameitem = "Redmi 9C NFC", Priceitem = "9000", Imageitem = Properties.Resources.i__1_  };
+            UserControl1[2] = new UserControl1(this) { Nameitem = "Iphone 11", Priceitem = "800", Imageitem = Properties.Resources.i__2__1  };
+            UserControl1[3] = new UserControl1(this) { Nameitem = "Vivo X200 pro", Priceitem = "3299", Imageitem = Properties.Resources.i__3_  };
+            UserControl1[4] = new UserControl1(this) { Nameitem = "Sony Erikson", Priceitem = "300", Imageitem = Properties.Resources.i__4_  };
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-           Button button = sender as Button;
-            listBox1.Items.Add(button.Text);
-           
-        }
-        bool list = true;
-        private void button7_Click(object sender, EventArgs e)
-        {
-
-            if (list == true)
-            {
-                listBox1.Visible = true;
-                list = false;
-            }
-            else
-            {
-                listBox1.Visible = false;
-                list = true;
-            }
-
-        }
-
-        private void button6_Click(object sender, EventArgs e)
-        {
-            if (listBox1.SelectedItems != -1)
-            {
-
-            }
-        }
     }
 }
