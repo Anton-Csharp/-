@@ -54,7 +54,12 @@ namespace магазин_тех
 
         private void button1_Click(object sender, EventArgs e)
         {
-            
+            Form3.showItemLayoutbasket(new UserControl1(Form3) { Namelabel = this.Namelabel, Pricelabel = this.Pricelabel, Imageitem = this.Imageitem });
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Form3.delitem (new UserControl1(Form3) { Namelabel = this.Namelabel, Pricelabel = this.Pricelabel, Imageitem = this.Imageitem });
         }
     }
 }
